@@ -4,7 +4,7 @@ require 'koneksi.php';
 // buat QUery perintah untuk menampilkan semua data
 // Secara Descending berdasarkan ID
 
-$sql_get_category = "SELECT * FROM sub_category WHERE id_category = '2' ";
+$sql_get_category = "SELECT * FROM sub_category WHERE category_id_category = '2' ORDER BY id_sub_category DESC";
 $query = $conn->query($sql_get_category);
 // Variable penampung array sementara
 $response_data = null;
